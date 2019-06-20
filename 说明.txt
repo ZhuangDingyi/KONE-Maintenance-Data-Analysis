@@ -1,0 +1,16 @@
+说明：
+
+处理文件：
+1. 数据处理和分析结果基本都在Data Processing.ipynb 基本对每一步都有做了注释
+2. Modeling and Optimization.ipynb 是成本函数模型的推导，但后面的实现主要靠可视化软件代码里面的model类
+3. cost_model.ipynb 是文博改进的成本率函数，但不能稳定在一月一天
+
+数据：
+1. lift.csv和lift.asv是处理以后的电梯总数据，主要用于Data Processing.ipynb，asv后缀用joblib包解析即可
+2. lift_TF是lift的子集，仅TF梯
+3. lift_series_dict.asv是电梯故障时间点数据，lift_time_series_dict.asv是电梯故障时间间隔数据
+4. mons_best_int.asv为最优维保时间间隔
+5. svr_all.joblib为SVR模型
+6. model_lstm_100epoch_20190115.asv为LSTM模型
+
+所用的数据集基本都能通过Data Processing.ipynb 生成，影响并不是很大。
